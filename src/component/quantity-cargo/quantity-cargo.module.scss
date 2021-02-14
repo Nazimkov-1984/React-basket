@@ -1,0 +1,25 @@
+.quantityWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 5px;
+}
+.quantityButtonWrapper{
+  display: flex;
+  justify-content: center;
+}
+.quantityButtonMinus, .quantityButtonPlus  {
+  padding: 10px 10px;
+  transition: all .8s;
+}
+.quantityButtonMinus:hover, .quantityButtonPlus:hover {
+  background-color: #eba753;
+  cursor: pointer;
+}
+.quantityButtonMinus {
+  margin-right: 10px;
+}
+.quantityTitle {
+  align-self: center;
+}

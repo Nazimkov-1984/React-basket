@@ -1,0 +1,13 @@
+.cardPriceWrapper {
+  white-space: nowrap;
+  margin-right: 10px;
+}
+@media(max-width: 375px),(max-width: 768px){
+  .cardPriceWrapper {
+    margin-right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,39 @@
+.totalPriceWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  align-self: flex-end;
+  background-color: darkgrey;
+  padding: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+@media(max-width: 375px),(max-width: 768px){
+  .totalPriceWrapper {
+    align-self:center;
+    margin-bottom: 20px;
+  }
+}
+.totalPriceNumberWrapper {
+  display: flex;
+}
+.totalPriceText {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.totalPriceNumber {
+  margin-right: 10px;
+  font-size: 1.3rem;
+
+}
+.totalPriceButton {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  transition: all .6s;
+}
+.totalPriceButton:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}

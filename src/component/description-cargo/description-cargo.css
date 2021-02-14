@@ -1,0 +1,29 @@
+.card__description-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__description--img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid grey;
+  margin-right: 10px;
+}
+.card__title {
+}
+@media(max-width: 375px),(max-width: 768px){
+  .card__description-wrapper {
+    margin-right: 0;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .card__description--img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  .card__title {
+    margin-right: 0px;
+    font-size: 1rem;
+  }
+}

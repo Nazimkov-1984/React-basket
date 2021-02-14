@@ -1,0 +1,15 @@
+.btnTrashImg {
+  width: 25px;
+  height: 25px;
+  align-self: start;
+  transition: all .8s;
+}
+.btnTrashImg:hover {
+  cursor: pointer;
+  transform: scale(2);
+}
+.buttonTrash{
+  border: none;
+  background: none;
+  outline: none;
+}
