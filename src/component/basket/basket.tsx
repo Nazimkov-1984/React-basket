@@ -21,7 +21,7 @@ const Basket: React.FunctionComponent = observer(() => {
   return (
     <div className={scss.basketHeader}>
       <h2 className={scss.basketTitle}>Корзина</h2>
-      {store.dataCards.map((item) => {
+      {store.dataCards.map(item => {
         return (
           <CargoCard key={item.id}>
             <DescriptionCargo name={item.name} imgSrc={item.imgSrc} />
