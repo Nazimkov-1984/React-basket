@@ -3,7 +3,10 @@ import store from "../../store";
 
 const scss = require("./input.module.scss");
 
-const Input = (props: { id: number }) => {
+interface IProps {
+  id: number;
+}
+const Input: React.FC<IProps> = ({id}) => {
   const [state, setValue] = useState({ textValue: 1 });
 
   const setCurrentVal = useCallback(
@@ -11,30 +14,30 @@ const Input = (props: { id: number }) => {
       const quantity = Number(e.target.value);
       if (Number.isInteger(quantity)) {
         state.textValue = quantity;
-        store.setCurrentValue(props.id, state.textValue);
+        store.setCurrentValue(id, state.textValue);
       }
     },
-    [props.id]
+    [id]
   );
 
   const defaultQuantity = useCallback(
     (e: any) => {
       if (e.target.value === "") {
-        store.defaultQuantity(props.id);
+        store.defaultQuantity(id);
       }
     },
-    [props.id]
+    [id]
   );
 
   const clearInput = useCallback(() => {
-    store.clearInput(props.id);
-  }, [props.id]);
+    store.clearInput(id);
+  }, [id]);
 
   return (
     <input
       className={scss.quantityInput}
       value={
-        store.dataCards[store.dataCards.findIndex((x) => x.id === props.id)]
+        store.dataCards[store.dataCards.findIndex((x) => x.id === id)]
           .quantity
       }
       onFocus={clearInput}
